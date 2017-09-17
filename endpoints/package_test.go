@@ -1,11 +1,9 @@
 package endpoints
 
 import (
-	"net/http"
-	"net/http/httptest"
 	"testing"
 
-	"github.com/briandowns/hashknife/hashknife-api/config"
+	"github.com/hashknife/api/config"
 	"github.com/stretchr/testify/suite"
 )
 
@@ -22,16 +20,7 @@ func (p *PackageServiceTestSuite) SetupSuite() {
 	p.endpoint = NewPackageService(p.conf)
 }
 
-// TestFrontendTestSuite
-func TestFPackageServiceTestSuite(t *testing.T) {
+// TestPackageServiceTestSuite
+func TestPackageServiceTestSuite(t *testing.T) {
 	suite.Run(t, &PackageServiceTestSuite{})
-}
-
-// TestFrontend_Success
-func (p *PackageServiceTestSuite) TestFrontend_Success() {
-	server := httptest.NewServer(f.endpoint)
-	defer server.Close()
-	resp, err := http.Get(server.URL)
-	f.Require().NoError(err)
-	f.Require().Equal(resp.StatusCode, http.StatusOK)
 }

@@ -6,8 +6,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/briandowns/hashknife/hashknife-api/endpoints"
 	"github.com/gorilla/mux"
+	"github.com/hashknife/api/endpoints"
 )
 
 // encodeHealthCheckHTTPResponse encodes the response given by the healthCheck Endpoint

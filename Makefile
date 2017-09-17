@@ -36,9 +36,9 @@ cover:
 docs:
 	@godoc -http=:6060 2>/dev/null &
 	@printf "To view hashknife-api docs, point your browser to:\n"
-	@printf "\n\thttp://127.0.0.1:6060/pkg/github.com/hashknife/hashknife-api/$(pkg)\n\n"
+	@printf "\n\thttp://127.0.0.1:6060/pkg/github.com/hashknife/api/$(pkg)\n\n"
 	@sleep 1
-	@open "http://127.0.0.1:6060/pkg/github.com/hashknife/hashknife-api/$(pkg)"
+	@open "http://127.0.0.1:6060/pkg/github.com/hashknife/api/$(pkg)"
 
 tc: test cover
 

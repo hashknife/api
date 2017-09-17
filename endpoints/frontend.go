@@ -3,7 +3,7 @@ package endpoints
 import (
 	"net/http"
 
-	"github.com/briandowns/hashknife/hashknife-api/config"
+	"github.com/hashknife/api/config"
 )
 
 type Frontender interface {
