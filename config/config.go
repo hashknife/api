@@ -7,6 +7,11 @@ import (
 	kitlog "github.com/go-kit/kit/log"
 )
 
+// Tile38
+type Tile38 struct {
+	Endpoint *string `json:"endpoint,omitempty"`
+}
+
 // Config
 type Config struct {
 	HTTPAddress                    *string `json:"http_address,omitempty"`
@@ -16,6 +21,7 @@ type Config struct {
 	StatsdReportingIntervalSeconds *int64  `json:"statsd_reporting_interval_seconds,omitempty"`
 	FrontendPath                   *string `json:"frontend_path,omitempty"`
 	DBURL                          *string `json:"db_url,omitempty"`
+	Tile38                         *Tile38 `json:"tile38,omitempty"`
 }
 
 // String has Config implement the Stringer interface and allows for nicer/easier

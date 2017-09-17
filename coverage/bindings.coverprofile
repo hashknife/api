@@ -1,11 +1,4 @@
 mode: atomic
-github.com/hashknife/api/bindings/http.go:32.60,33.12 1 0
-github.com/hashknife/api/bindings/http.go:33.12,47.3 6 0
-github.com/hashknife/api/bindings/http.go:51.125,106.2 11 0
-github.com/hashknife/api/bindings/http.go:109.69,110.12 1 0
-github.com/hashknife/api/bindings/http.go:110.12,116.3 5 0
-github.com/hashknife/api/bindings/http.go:120.113,130.2 3 2
-github.com/hashknife/api/bindings/http.go:133.47,135.2 1 0
 github.com/hashknife/api/bindings/encoders_decoders.go:14.101,17.2 2 1
 github.com/hashknife/api/bindings/encoders_decoders.go:20.93,23.2 2 0
 github.com/hashknife/api/bindings/encoders_decoders.go:28.77,30.2 1 2
@@ -27,3 +20,10 @@ github.com/hashknife/api/bindings/encoders_decoders.go:80.32,82.3 1 0
 github.com/hashknife/api/bindings/encoders_decoders.go:88.96,91.32 3 0
 github.com/hashknife/api/bindings/encoders_decoders.go:94.2,95.71 2 0
 github.com/hashknife/api/bindings/encoders_decoders.go:91.32,93.3 1 0
+github.com/hashknife/api/bindings/http.go:32.60,33.12 1 0
+github.com/hashknife/api/bindings/http.go:33.12,47.3 6 0
+github.com/hashknife/api/bindings/http.go:51.125,106.2 11 0
+github.com/hashknife/api/bindings/http.go:109.69,110.12 1 0
+github.com/hashknife/api/bindings/http.go:110.12,116.3 5 0
+github.com/hashknife/api/bindings/http.go:120.113,130.2 3 2
+github.com/hashknife/api/bindings/http.go:133.47,135.2 1 0
