@@ -10,9 +10,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/briandowns/hashknife/hashknife-api/bindings"
-	"github.com/briandowns/hashknife/hashknife-api/config"
 	kitlog "github.com/go-kit/kit/log"
+	"github.com/hashknife/api/bindings"
+	"github.com/hashknife/api/config"
 )
 
 var gitSHA string

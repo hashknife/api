@@ -4,14 +4,14 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/briandowns/hashknife/common/middleware"
-	"github.com/briandowns/hashknife/hashknife-api/config"
-	"github.com/briandowns/hashknife/hashknife-api/endpoints"
 	"github.com/go-kit/kit/endpoint"
 	kitlog "github.com/go-kit/kit/log"
 	kithttp "github.com/go-kit/kit/transport/http"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
+	"github.com/hashknife/api/config"
+	"github.com/hashknife/api/endpoints"
+	"github.com/hashknife/common/middleware"
 )
 
 const (

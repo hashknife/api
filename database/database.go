@@ -3,8 +3,8 @@ package database
 import (
 	"fmt"
 
-	"github.com/briandowns/hashknife/hashknife-api/config"
 	kitlog "github.com/go-kit/kit/log"
+	"github.com/hashknife/api/config"
 	"github.com/jinzhu/gorm"
 	// used to access the PostgreSQL driver
 	_ "github.com/jinzhu/gorm/dialects/postgres"
@@ -33,7 +33,7 @@ func NewDatabase(c *config.Config, l kitlog.Logger) (*Database, error) {
 
 // connect connects to the database
 func (d *Database) connect() error {
-	db, err := gorm.Open(*d.conf.DBType, *d.conf.DBURL+"?sslmode=disable&connect_timeout=5")
+	db, err := gorm.Open("postgres", *d.conf.DBURL+"?sslmode=disable&connect_timeout=5")
 	if err != nil {
 		return fmt.Errorf("Unable to connecto RDS PostgreSQL instance: %s", err)
 	}

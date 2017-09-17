@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/briandowns/hashknife/hashknife-api/config"
+	"github.com/hashknife/api/config"
 )
 
 // ProfileServicer

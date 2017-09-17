@@ -8,11 +8,11 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/briandowns/hashknife/hashknife-api/config"
-	"github.com/briandowns/hashknife/hashknife-api/endpoints"
-	"github.com/briandowns/hashknife/hashknife-api/mocks"
 	kitlog "github.com/go-kit/kit/log"
 	"github.com/gorilla/mux"
+	"github.com/hashknife/api/config"
+	"github.com/hashknife/api/endpoints"
+	"github.com/hashknife/api/mocks"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 )

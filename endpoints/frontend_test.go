@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/briandowns/hashknife/hashknife-api/config"
+	"github.com/hashknife/api/config"
 	"github.com/stretchr/testify/suite"
 )
 
