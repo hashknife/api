@@ -1,4 +1,4 @@
 #!/bin/sh
 
 make build
-docker build -t raven-api:latest .
+docker build -t hashknife-api:latest .
