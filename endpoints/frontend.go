@@ -24,5 +24,5 @@ func NewFrontend(c *config.Config) Frontender {
 
 // ServeHTTP is used to handle requests to the frontend
 func (f *Frontend) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "public/html/index.html")
+	http.ServeFile(w, r, f.path+"/index.html")
 }
