@@ -5,7 +5,8 @@
     "statsd_address": "127.0.0.1:8125",
     "statsd_reporting_interval_seconds": 5,
     "tile38": {
-        "hostname": "localhost:9851"
+        "endpoint": "localhost:9851"
     },
-    "db_url": "http://blah.blah.com"
+    "frontend_path": "endpoints/public/html",
+    "db_url": ""
 }

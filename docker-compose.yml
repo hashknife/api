@@ -5,7 +5,7 @@ services:
     ports:
       - 9851:9851
     volumes:
-      - ravenGeoData:/data
+      - hashknifeGeoData:/data
   graphite-statsd:
     image: hopsoft/graphite-statsd
     ports:
@@ -21,24 +21,26 @@ services:
     container_name: db
     volumes:
       - "postgresData:/var/lib/postgresql/data"
+    ports: 
+      - 5432:5432
     networks:
       - back-tier
-  geo-api:
-    image: geo-api:latest
-    ports:
-      - 9988:9988
-      - 9989:9989
-    networks:
-      - back-tier
-  raven-api:
-    image: raven-api:latest
+  # geo-api:
+  #   image: geo-api:latest
+  #   ports:
+  #     - 9988:9988
+  #     - 9989:9989
+  #   networks:
+  #     - back-tier
+  hashknife-api:
+    image: hashknife-api:latest
     ports:
       - 9998:9998
       - 9999:9999
     networks:
       - back-tier
 volumes:
-  ravenGeoData:
+  hashknifeGeoData:
   postgresData:
 networks:
   back-tier:

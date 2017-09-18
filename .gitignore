@@ -29,5 +29,5 @@ _testmain.go
 .vscode/
 coverage/
 
-bin/*
+bin/api
 config.json

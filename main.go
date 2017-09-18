@@ -42,7 +42,7 @@ func main() {
 
 	conf, err := config.Load(configFlag, logger)
 	if err != nil {
-		logger.Log("fatal", err.Error())
+		logger.Log("fatal asdf", err.Error())
 		os.Exit(1)
 	}
 
