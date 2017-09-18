@@ -18,7 +18,7 @@ type FrontendTestSuite struct {
 
 // SetupSuite runs code needed for the test suite
 func (f *FrontendTestSuite) SetupSuite() {
-	path := "/frontend"
+	path := "endpoints/public"
 	f.conf = &config.Config{
 		FrontendPath: &path,
 	}
@@ -32,9 +32,15 @@ func TestFrontendTestSuite(t *testing.T) {
 
 // TestFrontend_Success
 func (f *FrontendTestSuite) TestFrontend_Success() {
+
+}
+
+// TestFrontend_Failure
+func (f *FrontendTestSuite) TestFrontend_Failure() {
 	server := httptest.NewServer(f.endpoint)
+	server.URL += "/hashknife-api/frontend"
 	defer server.Close()
 	resp, err := http.Get(server.URL)
 	f.Require().NoError(err)
-	f.Require().Equal(resp.StatusCode, http.StatusOK)
+	f.Require().Equal(resp.StatusCode, http.StatusNotFound)
 }
